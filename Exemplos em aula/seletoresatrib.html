@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seletor de atributos</title>
+    <style>
+        /* Usamos o [] para atribuir para um elemento específico o estilo  */
+        [title]{
+            color: brown;
+        }
+        [title~="Streaming"]{
+            color: red;
+            background: black;
+        }
+        [title="Prime video"]{
+            color: blue;
+        }
+        [title="Spotify"]{
+            color: green;
+        }
+        [title="Disney"]{
+            color:darkblue ;
+        }
+        /* Colocando dentro do atributo [] o simbolo ~ ele irá buscar uma palavra específica ou a palavra inteira */
+        [href^="http://"]{
+            background-color: aqua;
+        }
+        li{
+            list-style: none;
+            padding: 15px;
+            text-decoration: none;
+        }
+
+        ul{
+            display: flex;
+            
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <ul>
+            <li><a href="http://www.netflix.com/br/" title="Streaming Netflix" target="_blank">Netflix</a></li>
+            <li><a href="http://www.primevideo.com/" title="Prime video" target="_blank">Prime Video</a></li>
+            <li><a href="https://open.spotify.com/intl-pt" title="Spotify" target="_blank">Spotify</a></li>
+            <li><a href="https://www.disneyplus.com/pt-br" target="_blank">Disney Plus</a></li>
+        </ul>
+    </div>
+</body>
+</html>
