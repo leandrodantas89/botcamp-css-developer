@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Altura e Largura</title>
+    <style>
+        div{
+            background-color: aqua;
+            width: auto; /*Usando auto ele usa uma medição automática*/
+            /*Initial aplica o seu valor inicial por padrão ao usar essa propriedade*/
+            /*Inherit define o valor de acordo com o seu elemento pai*/
+            height: initial;
+            text-align: center;
+        }
+        #div01{
+            background-color: blue;
+            width: 200px;
+            height: 500px;
+        }
+        #div02{
+            background-color: red;
+            height:inherit; /*Herdando a altura do div 1*/
+        }
+    </style>
+</head>
+<body>
+    <div>
+        Trilha de CSS
+    </div>
+    <div id="div01">
+        Sou a div 01
+        <div id="div02">
+            Sou a div 02
+        </div>
+    </div>
+</body>
+</html>

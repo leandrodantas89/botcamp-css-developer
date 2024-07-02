@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combinador descendente</title>
+    <style>
+        /*
+        Combinadores: Qual tipo de relação entre 2 seletores.
+        [SELETOR] [COMBINADOR] [SELETOR] 
+         */
+        .fundoverde li{
+            background: lightseagreen;
+        }
+
+        .fundoazul li {
+            background: lightblue;
+        }
+
+        li{
+            color: red;
+        }
+
+        #sublista-01 li{
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+
+     <ul>
+        <li class="fundoverde" id="lista-01">
+            <div>Item 1</div>
+        <ul id="sublista-01">
+             <li>Sub Item A</li>   
+             <li>Sub Item B</li>   
+        </ul>
+        </li>
+        <li class="fundoverde" id="lista-02">
+            <div>Item 2</div>
+            <ul id="sublista-02">
+                <li>Sub Item A</li>   
+                <li>Sub Item B</li>   
+            </ul>
+        </li>
+        <li class="fundoazul" id="lista-03">
+            <div>Item 3</div>
+            <ul id="sublista-03">
+                <li>Sub Item A</li>
+                <li>Sub Item B</li>
+            </ul>
+        </li>
+
+     </ul>       
+</body>
+</html>
