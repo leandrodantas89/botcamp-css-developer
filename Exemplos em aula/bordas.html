@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tamanho das bordas</title>
+    <style>
+        .exemplo{
+            width: 300px;
+            height: 300px;
+            background-color: bisque;
+            border-width: 10px 7px;
+            /* definindo estilo da borda */
+            border-style: solid; /*Deixa a borda sólida*/
+            border-style: dashed; /*Deixa a borda tracilhada*/
+            border-style: dotted; /*Deixa a borda com bolinhas*/    
+            border-style: double; /*Deixa a borda com vazamento*/
+            border-color: red greenyellow coral blue; /*Cor da borda*/
+            
+
+            /* fim estilo da borda */
+        }
+
+        .exemplo2{
+            width: 300px;
+            height: 300px;
+            border: 10px solid;
+            border-image-source: url('cor.jpg'); /*Usado para colocar imagem na borda*/
+            
+            border-image-outset: 100px;
+        }
+
+        .exemplo3{
+            width: 300px;
+            height: 300px;
+            border: 10px solid;
+            border-image-source: linear-gradient(blue, red); /*Usado para degradê nas bordas*/
+            border-image-repeat: round;
+            
+        }
+    </style>
+</head>
+<body>
+    <h1>Bordas</h1>
+    <p>Podemos definir as configurações das nossas bordas através das propriedades:</p>
+    <ul>
+        <li>border-with</li>
+        <li>border-style</li>
+        <li>border-color</li>
+    </ul>
+    <h2>Exemplo:</h2>
+    <div class="exemplo">
+
+    </div>
+    <br>
+    <h1>Bordas com Imagens</h1>
+    <ul>
+        <li>border-image-source</li>
+        <li>border-image-width</li>
+        <li>border-image-repeat</li>
+        <li>border-image-outset</li>
+        <li>border-image-slice</li>
+    </ul>
+    <div class="exemplo2">
+
+    </div>
+     <br>
+     <div class="exemplo3">
+
+     </div>
+</body>
+</html>

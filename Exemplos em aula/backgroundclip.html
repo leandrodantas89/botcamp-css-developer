@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background clip</title>
+    <style>
+        /*
+        background-clip: padding-box; ocupa a área de fundo dentro da bordar
+        background-clip: border-box; cobre a área de fundo da borda
+        background-clip: content-box; ele redimensiona a área de fundo dentro da borda
+        */
+
+         body{
+            height: 200vh;
+         }
+        .exemplo{
+            width: 300px;
+            height: 300px;
+            border: dashed 15px red;
+            padding: 30px;
+            background-clip: padding-box;
+            background-color: red;
+            
+        }
+
+        .exemplo2{
+            width: 300px;
+            height: 300px;
+            padding: 30px;
+            background-clip: border-box;
+            background-color: red;
+            border: dashed 15px red;
+        }
+
+        .exemplo3{
+            width: 300px;
+            height: 300px;
+            border: dashed 15px red;
+            padding: 30px;
+            background-clip: content-box;
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="exemplo">   
+      
+    </div>  
+    <br>
+
+    <div class="exemplo2">   
+       
+    </div>  
+    <br>
+
+    <div class="exemplo3">   
+       
+    <br>
+</body>
+</html>

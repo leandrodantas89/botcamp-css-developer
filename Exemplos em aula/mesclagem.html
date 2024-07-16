@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mesclagem</title>
+    <style>
+        /*
+        background-blend-mode: multiply; usado para mesclar os fundos
+        */
+
+         body{
+            height: 200vh;
+         }
+        .exemplo{
+            width: 300px;
+            height: 300px;
+            border: dashed 15px rgb(0, 185, 83);
+            padding: 30px;
+            font-size: 40px;
+            font-weight: 900;
+            background-image: url('cor.jpg');
+            background-color: red;
+            background-blend-mode: hard-light;
+            
+        }
+
+        .exemplo2{
+            width: 300px;
+            height: 300px;
+            padding: 30px;
+            background-clip: border-box;
+            background-color: red;
+            border: dashed 15px red;
+        }
+
+        .exemplo3{
+            width: 300px;
+            height: 300px;
+            border: dashed 15px red;
+            padding: 30px;
+            background-clip: content-box;
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="exemplo">   
+      <h1>Trilha CSS</h1>
+    </div>  
+    <br>
+
+    <div class="exemplo2">   
+       
+    </div>  
+    <br>
+
+    <div class="exemplo3">   
+       
+    <br>
+</body>
+</html>
